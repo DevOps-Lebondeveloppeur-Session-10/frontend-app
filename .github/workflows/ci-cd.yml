@@ -78,7 +78,6 @@ jobs:
               # Run the new container with environment variables
               sudo docker run -d \
                 --name frontend-app \
-                --network frontend-app-net \
                 -p 3000:80 \
                 --restart=always \
                 ${{ env.IMAGE_NAME }}
